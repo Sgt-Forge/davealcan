@@ -1,0 +1,39 @@
+{
+  "name": "davealcan",
+  "version": "1.0.0",
+  "description": "Personal website for Dave",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "scss": "node-sass ./scss/index.scss ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sgt-Forge/davealcan.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "personal-website"
+  ],
+  "author": "Paul Nakonieczny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sgt-Forge/davealcan/issues"
+  },
+  "homepage": "https://github.com/Sgt-Forge/davealcan#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-google": "^0.14.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
