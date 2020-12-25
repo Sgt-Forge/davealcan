@@ -8,6 +8,7 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/js'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/css', express.static(__dirname + '/public/css'));
+app.use('/img', express.static(__dirname + '/public/img'));
 
 app.set('view engine', 'ejs');
 
@@ -15,6 +16,4 @@ app.get('/', (req, res) => {
     res.render('index/index');
 });
 
-app.listen(PORT, HOST, () => {
-    console.log(`Listening on ${HOST} : ${PORT}`);
-});
+app.listen(PORT, HOST);

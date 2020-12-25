@@ -1,0 +1,54 @@
+* {
+  font-family: 'Noto Sans JP', sans-serif; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+html {
+  height: 100%; }
+
+.bg-image {
+  background-image: url("../img/background.jpg");
+  height: 100vh;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); }
+
+.intro {
+  background: #e1e1e1;
+  /* Fallback for older browsers without RGBA-support */
+  background: rgba(225, 225, 225, 0.5);
+  border-radius: 10px; }
+
+.intro-container {
+  margin: 2rem;
+  margin-top: 5rem; }
+
+.main-content {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.wrapper {
+  overflow: hidden; }
+
+/* Responsive */
+@media (min-width: 992px) {
+  .intro-container {
+    margin: auto;
+    margin-top: 10rem; } }
