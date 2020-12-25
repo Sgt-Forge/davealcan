@@ -14,7 +14,7 @@ html {
   background-image: url("../img/background.jpg");
   height: 100vh;
   filter: blur(50px);
-  -webkit-filter: blur(50px);
+  -webkit-filter: blur(10px);
   -moz-filter: blur(50px);
   -o-filter: blur(50px);
   -ms-filter: blur(50px);
@@ -32,7 +32,8 @@ html {
   background: #e1e1e1;
   /* Fallback for older browsers without RGBA-support */
   background: rgba(225, 225, 225, 0.5);
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 2rem; }
 
 .intro-container {
   margin: 2rem;
@@ -49,6 +50,12 @@ html {
 
 /* Responsive */
 @media (min-width: 992px) {
+  .intro {
+    background: #e1e1e1;
+    /* Fallback for older browsers without RGBA-support */
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    margin: auto; }
   .intro-container {
     margin: auto;
     margin-top: 10rem; } }
